@@ -1,0 +1,184 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: #00A86B;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: realtive;
+  padding: 0 20px;
+}
+nav h1 {
+  font-size: 3rem;
+  position: absolute;
+  transform: translatex(-50%);
+  left: 50%;
+}
+.right {
+  display: flex;
+  column-gap: 20px;
+align-items: center;
+}
+.right p {
+  font-size: 1.5rem;
+}
+.right button {
+  font-size: 2.5rem;
+  color: black;
+  background: transparent;
+  border: none;
+}
+
+#userContainer {
+  background-color: #191c27;
+  height: calc(100vh - 100px);
+  border: 1px solid #191c27;
+}
+
+#userList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  margin: 200px auto;
+  
+}
+
+#userList li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  color: white;
+  width: 100%;
+  height: 140px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* force left alignment */
+}
+
+.userName {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.status {
+  font-size: 1.7rem;
+  color: #00A86B;
+}
+
+.chat {
+  margin-left: auto; /* pushes button to far right */
+  margin-right: 20px;
+  padding: 5px 10px;
+  background-color: #00A86B;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  border-radius: 5px;
+  font-size: 3rem;
+}
+.menu {
+  width: 160px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  right: 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  transform: translateY(80px);
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0;
+}
+.showmenu {
+  opacity: 1;
+  transform: translateY(100px);
+  transition: transform 0.5s, opacity 0.5s;
+  pointer-events: auto;
+}
+.menu button {
+  font-size: 2.5rem;
+  background: transparent;
+  border: none;
+  color: white;
+}
+#loading {
+  font-size: 3rem;
+  color: white;
+  margin: 100px auto;
+}
+/*
+#userContainer {
+  background-color: #191c27;
+  height: calc(100vh - 100px);
+  border: 1px solid #191c27;
+}
+
+#userList {
+  width: 80%;
+  margin: 200px auto;
+  background-color: black;
+  min-height: 50%;
+  height: auto;
+  border: 3px solid grey;
+  list-style: none;
+}
+#userList li span {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+#userList li .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #00A86B;
+}
+#userList li {
+  height: 120px;
+  background-color: #191c27;
+  width: 95%;
+  margin: 50px auto;
+  font-size: 2rem;
+  color: lightgrey;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#userList li button {
+  padding: 10px;
+  font-size: 2rem;
+  background-color: #00A86B;
+}
+
+
+*/
